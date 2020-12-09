@@ -1,0 +1,22 @@
+div.container {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+div.card.mb-3 {
+    margin: 0 auto;
+  width: 1500px;
+
+
+}
+
+div.col {
+    margin: 0 auto;
+    height: 500px;
+    width:750px ;
+}
+
+p.card-text {
+    font-family: Source Sans Pro ;
+}
