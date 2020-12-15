@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" &gt;>
@@ -11,40 +12,24 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>Sushiplaza</title>
-    <div class="container">
-        <ul class="nav justify-content-center">
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Broneeri laud</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Telli veebis</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Eritellimused</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Restoranid</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Meist</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Kliendikaart</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
-                    aria-expanded="false">ET</a>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">ENG</a></li>
-                    <li><a class="dropdown-item" href="#">RUS</a></li>
-                    <li><a class="dropdown-item" href="#">DEN</a></li>
-                    <li>
-                        <hr class="dropdown-divider">
-                    </li>
-                    <li><a class="dropdown-item" href="#">Separated link</a></li>
-                </ul>
-            </li>
-    </div>
+    <nav id="home">
+        <div class="logo">
+            <img src="./Photos/logo.png" alt="">
+        </div>
+        <ul class="nav-links">
+            <li><a href="#Broneeri">Broneeri laud</a></li>
+            <li><a href="#Telli">Telli veebis</a></li>
+            <li><a href="#Eritellimused">Eritellimused</a></li>
+            <li><a href="#Restoranid">Restoranid</a></li>
+            <li><a href="#Meist">Meist</a></li>
+            <li><a href="#Kliendikaart">Kliendikaart</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
 </head>
 
 <body style="background-color:black;">
@@ -138,6 +123,7 @@
                     </div>
                 </div>
             </div>
+            <script type="text/javascript" src="script.js" charset="utf-8"></script>
     </body>
 
 </html>
