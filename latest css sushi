@@ -1,0 +1,461 @@
+/* Blog front-page*/
+.blog {
+	font-family: Source Sans Pro;
+	background-color: #050607;
+	padding-top: 0px;
+}
+.blog-item {
+    position: relative;
+    display: block;
+    background-color: #161616;
+    -webkit-transition: all ease .5s;
+    -o-transition: all ease 0s;
+    -moz-transition: all ease .5s;
+    transition: all ease 0s;
+    cursor: pointer;
+    margin-top: 0px;
+}
+img{
+	height:auto;
+	width:auto;
+}
+.posts {
+	margin-top: 150px;
+	display: grid;
+	padding-bottom: 10px;
+    grid-template-columns: repeat(2, 49%);
+    grid-template-rows: repeat(2, auto-flow);
+    grid-gap: 20px 20px;
+    grid-template-areas:
+        "b b"
+        "c d"
+				"e f";
+}
+.card:nth-child(1) {
+	grid-area:b;
+}
+
+.blog-item__img {
+		height:260px ;
+    width: 100%;
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  color:white ;
+  text-decoration: none;
+}
+.card:nth-child(1) .blog-item__img  {
+	height: 380px;
+}
+.blog-item__txt {
+    max-height: 241px;	
+}
+.blog-item__txt:hover {
+    text-decoration:none;
+		
+}
+.blog-item__h {
+		padding-top:0px;
+    padding-bottom: 0px;
+		color: #FFFFFF;
+		font-weight: 400;
+		height:60px;
+		text-align: start;
+		margin-top: 5px;
+}
+.blog-item__h h1 {
+		font-size: 28px;
+    color: #FFFFFF;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+		padding-top:10px;
+		padding-bottom:15px;
+		display: flex;
+    align-items: center;
+    height: 70px;
+}
+.blog-item__h h3 {
+		font-size: 28px;
+    color: #FFFFFF;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+		padding-top:0px;
+		padding-bottom:0px;
+		display: flex;
+    align-items: center;
+    height: 70px;
+}
+.blog-item {
+	border-radius: 5px;
+	margin-top:0px;
+
+}
+.blog-item__data {
+    position: relative;
+		background-color:	transparent;
+		width: auto;
+    height: auto;
+}
+.blog-item__data p {
+		max-width: fit-content;
+		color:#A3A3A3;
+		font-size: 13px;
+    font-weight: 600;
+    line-height: 23px;
+		margin-top:10px;
+
+}
+
+.blog-item__desc{
+	 overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-line-clamp: 3;
+   -webkit-box-orient:vertical;
+		letter-spacing: 0px;
+		padding-bottom: 0px;
+		padding-top:10px;
+		
+}
+.blog-item__desc p {
+    font-size: 15px;
+    color: #FFFFFF;
+    font-weight: 400;
+    line-height: 1.533;
+}
+.blog-item__txt {
+    padding-left: 40px;
+    padding-right: 40px;
+		padding-bottom: 15px;
+		border:solid 1px;
+    border-radius: 0px 0px 5px 5px;
+		border-color:#373535;
+}
+.blog-item__read {
+	color:#EC0029;
+	font-weight: 600;
+	font-size:15px;
+	line-height: 1.4;
+	border-bottom: 0px;
+	padding-top:10px;
+  bottom: 20px;
+	-webkit-transition: all ease 0s;
+    -o-transition: all ease 0s;
+    -moz-transition: all ease 0s;
+    transition: all ease 0s;
+    border-bottom: 0px solid #080808;
+    padding-bottom: 0px;
+}
+.blog-item:hover .blog-item__read {
+		color:#FFFFFF;
+}
+.btn.loadMoreBtn {
+    color: #FFFFFF;
+    height: 68px;
+    text-align: center;
+		border-radius: 5px;
+		border: 2px #5B000E;
+		padding: 21px;
+		font-family: Source Sans Pro;
+		font-weight: 600;
+		font-size: 19px;
+		line-height: 21px;
+	 	text-decoration: none;
+		background: rgb(255,0,0);
+		background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(219,0,33,1) 100%);
+}
+.loadMoreBtn-label {
+	background-image: 	url(http://koopia.indiead.ee/wp-content/uploads/2021/01/waiting.png);
+    background-repeat: no-repeat;
+    padding-left: 27px;
+		display:inline-flex;
+		background-size: contain;
+		text-transform: none;
+}
+@media screen and (max-width: 1200px){
+.blog-item__img {
+    max-height: 280px;
+}
+	.blog-item__h h3 {
+		font-size: 26px;
+	}
+}
+@media screen and (max-width: 900px){
+.blog-item__txt {
+    max-height: 241px;
+}
+	.blog-item__h h3 {
+		font-size: 26px;
+	}
+}
+@media screen and (max-width: 768px){
+	.blog-item__img {
+    height: 280px;
+}
+	.blog-item__h h3 {
+		font-size: 26px;
+	}
+	.posts {
+		display: grid;
+    grid-template-columns: repeat(1,auto);
+    grid-template-rows: repeat(1, auto-flow);
+    grid-gap: 20px 20px;
+    grid-template-areas:
+        "b"
+        "c"
+				"d"
+				"e"
+				"f";
+	}
+	.card:nth-child(1) .blog-item__img  {
+	height: 280px;
+}
+	.card:nth-child(1) {
+	grid-area:b ;
+}
+	.card:nth-child(2) {
+	grid-area: c;
+}
+	.card:nth-child(3) {
+	grid-area: d;
+}
+	.card:nth-child(4) {
+	grid-area: e;
+}
+.card:nth-child(5) {
+	grid-area: f;
+}
+}
+@media screen and (max-width: 568px){
+	.blog-item__img {
+    height: 200px;
+}
+	.blog-item__h h3 {
+		font-size: 24px;
+	}
+	.card:nth-child(1) .blog-item__img  {
+	height: 200px;
+}
+}
+@media screen and (max-width: 460px){
+	.blog-item__img {
+    height: 200px;
+}
+	.card:nth-child(1) .blog-item__img  {
+	height: 200px;
+}
+}
+/* Blog page*/
+
+.blog-post {
+	background-color:#050607;
+	padding-bottom: 0px;!important
+}
+
+.blog-post h1,h2,h3 {
+	color:#ffffff;
+	font-family: Source Sans Pro;
+}
+.blog-post__desc p {
+	color:#ffffff;
+		font-family: Source Sans Pro;
+	 font-size: 15px;
+    font-weight: 400;
+    line-height: 23px;
+    text-align: start;
+		padding-bottom: 15px
+		
+}
+.blog-post__desc p:first-child
+{
+	display:none;
+		
+}
+.blog-post__h {
+    padding-bottom: 10px;
+}
+.blog-post h1 {
+	font-size: 28px;
+	font-weight: 400;
+	line-height: 28px;
+}
+.blog-post__h h2 {
+		font-size: 24px;
+    color: #FFFFFF;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: justify;
+		padding-top: 10px;
+}
+.blog-post__data p {
+    font-size: 13px;
+    color: #A3A3A3;
+    font-weight: 600;
+    line-height: 23px;
+    text-align: center;
+	padding-bottom: 10px;
+}
+.blog-post__data {
+     display:inline-block;
+     left: 0px; 
+     top: 0px;
+   	 background-color: transparent; 
+   	 width: auto;
+     height: auto;
+			margin:0;
+			position:relative;
+}
+
+p:empty {
+	display: none;
+}
+.font-2 p:first-child(1){
+	display:none;
+}
+.post-single__img {
+		height:auto;
+		width:auto;
+}
+.post-single {
+	max-height: 280px;
+    width: 50%;
+    float: right;
+		border-radius: 5px;
+		margin-left:20px;
+		margin-bottom:30px;
+}
+@media screen and (max-width: 750px){
+	.post-single {
+    height: auto;
+    width: 100%;
+    float: right;
+    border-radius: 5px;
+    margin-left: 0px;
+    margin-bottom: 20px;
+}
+}
+.blog-footer {
+	background-color:#050607;
+}
+
+.blog-footer__h h3 {
+    font-size: 24px;
+    color: #FFFFFF;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+}
+.blog-footer__h h3:after {
+	background-color: #050607;
+
+
+}
+.blog-item.small .blog-item___data  {
+	padding-top: 10px;
+}
+.blog-item.small .blog-item__h h1 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+		height: 70px;
+		font-size:24px;
+}
+.blog-item.small .blog-item__h {
+    padding-top: 10px;
+    padding-bottom: 10px;
+		height: 70px;
+		font-size:24px;
+}
+.blog-item.small .blog-item__txt {
+		max-height:180px;
+		border:none;
+		padding-bottom: 15px;
+}
+.owl-carousel .owl-item img {
+    display: block;
+    width: 100%;
+		max-height: 160px;
+		border-radius: 5px 5px 0px 0px;
+}
+.blog-slider__item .blog-item {
+		margin-bottom:50px;
+    padding-bottom: 0px;
+    border: solid 1px;
+    border-radius: 5px;
+    border-color: #373535; 
+}
+.blog-item.small .blog-item__read {
+	padding-top:0px;
+}
+.blog-footer-back__icon use.right-arrow {
+	fill: #ffffff; 
+}
+.blog-footer-back__desc a {
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 600;
+    line-height: 1.2;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.blog-item.small .blog-item__read {
+    color: #FFFFFF;
+}
+.blog-count {
+    display: none;!important
+    position: relative;
+    margin-bottom: 70px;
+}
+.blog-slider__item {
+     padding-bottom: 0px; 
+}
+.blog-post__desc li {
+	background: url(http://koopia.indiead.ee/wp-content/uploads/2021/01/bulletlist-e1611056812858.png) no-repeat left 4px;
+    padding-left: 20px;
+    background-size: 13px 13px;
+    display: block;
+}
+.blog-post__desc ul {
+	padding-bottom:15px;
+	padding-left: 20px;
+	font-family: Source Sans Pro;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 23px;
+    text-align: start;
+}
+
+.owl-item {
+	width: 300px;
+}
+
+
+
+
+.blog-item__desc li {
+	background: url(http://koopia.indiead.ee/wp-content/uploads/2021/01/bulletlist-e1611056812858.png) no-repeat left 4px;
+    padding-left: 20px;
+    background-size: 13px 13px;
+    display: block;
+}
+.blog-item__desc ul {
+	padding-bottom:15px;
+	padding-left: 20px;
+	font-family: Source Sans Pro;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 23px;
+    text-align: start;
+}
